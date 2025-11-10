@@ -12,7 +12,7 @@ int dj[] = {1, -1, 0, 0};
 
 //EDI
 void citire(){
-    cout << "Introduceti dimensiunea matricei si matricea in sine: "
+    cout << "Introduceti dimensiunea matricei si matricea in sine: ";
     cin >> n >> m;
     for(int i = 1; i<=n; i++)
         for(int j = 1; j<=m; j++)
@@ -24,7 +24,9 @@ void citire(){
 } //in urma citirii, e umpluta matricea, de asemenea si n si m, pozitia initiala si finala la final
 
 //VLADUTZ
-void back(int i, int j, int suma); //parcurge matricea conform cerintei din poza
+void back(int i, int j, int suma) {
+    
+} //parcurge matricea conform cerintei din poza
 
 //LARGEANU
 void tiparire(){
