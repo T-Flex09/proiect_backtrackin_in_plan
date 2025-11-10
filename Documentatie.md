@@ -1,6 +1,22 @@
 # Documentatie
 
-## Variabile
+## Cuprins
+- [Descrierea temei](./Documentatie.md#descrierea-temei)
+- [Limbajul de programare utilizat](./Documentatie.md#limbaj-de-programare-utilizat)
+- [Cerintele sistemului](./Documentatie.md#cerintele-sistemului)
+- [Descrierea programului](./Documentatie.md#descrierea-programului)
+- [Concluzii](./Documentatie.md#concluzii)
+- [Webografie](./Documentatie.md#webografie)
+
+## Descrierea temei
+
+## Limbaj de programare utilizat
+
+## Cerintele sistemului
+
+## Descrierea programului
+
+### Variabile
 
 Incepem prin a declara variabilele (precum dimensiunile matricei, matricea propriu-zisa, vectorii de solutie, pozitia initiala, pozitia finala, vectorii de deplasare si alte variabile folosite pentru rezolvarea problemei) globale:
 
@@ -13,7 +29,7 @@ int di[] = {-1, -1, -1, 0, 0, 1, 1, 1};
 int dj[] = {-1, 0, 1, -1, 1, -1, 0, 1};
 ```
 
-## Functii
+### Functii
 
 Prima este o functie de citire; intai, citim dimensiunile matriceii(n, m), dupa aceea folosim o structura repetitiva pentru a parcurge elementele si citim matricea. Dupa, citim pozitia initiala si pozitia finala, folosite pentru rezolvarea problemei.
 
@@ -70,7 +86,7 @@ void back(int i, int j, int suma, int pas) {
 }
 ```
 
-## Main
+### Main
 
 Ultima parte a programului este functia main. In aceasta parte a programului, apelam functiile de citire, backtracking si afisare.
 ```c++
@@ -82,7 +98,7 @@ return 0;
 }
 ```
 
-## Program complet
+### Program complet
 
 ```c++
 #include <iostream>
@@ -145,3 +161,8 @@ int main() {
     return 0;
 }
 ```
+
+## Concluzii
+
+## Webografie
+- [pbinfo](https://www.pbinfo.ro)
