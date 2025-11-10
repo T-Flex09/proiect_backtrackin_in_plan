@@ -167,7 +167,7 @@ int main() {
 ```
 
 ## Concluzii
-
+In concluzie, programul folosit demonstreaza implementarea metodei Backtracking pentru gasirea drumului pentru care suma diferentelor celulelor din traseu este maxima.
 
 ## Webografie
 - [pbinfo](https://www.pbinfo.ro)
