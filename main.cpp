@@ -34,7 +34,7 @@ void back(int i, int j, int suma) {
         }
     }
     
-    sol_len--;
+    sol_len++;
 } //parcurge matricea conform cerintei din poza
 
 //LARGEANU
