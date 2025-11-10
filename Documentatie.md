@@ -96,9 +96,9 @@ Ultima parte a programului este functia main. In aceasta parte a programului, ap
 ```c++
 int main() {
     citire();
-    back(poz_init_I, poz_init_J);
+    back(poz_init_I, poz_init_J, a[poz_init_I][poz_init_J], 1);
     tiparire();
-return 0;
+    return 0;
 }
 ```
 
