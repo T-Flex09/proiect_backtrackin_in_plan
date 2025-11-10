@@ -1,6 +1,6 @@
 # Documentatie
 
-
+## Variabile
 
 Incepem prin a declara variabilele (precum dimensiunile matricei, matricea propriu-zisa, vectorii de solutie, pozitia initiala, pozitia finala, vectorii de deplasare si alte variabile folosite pentru rezolvarea problemei) globale:
 
@@ -13,7 +13,8 @@ int di[] = {-1, -1, -1, 0, 0, 1, 1, 1};
 int dj[] = {-1, 0, 1, -1, 1, -1, 0, 1};
 ```
 
-Urmeaza functiile.
+## Functii
+
 Prima este o functie de citire; intai, citim dimensiunile matriceii(n, m), dupa aceea folosim o structura repetitiva pentru a parcurge elementele si citim matricea. Dupa, citim pozitia initiala si pozitia finala, folosite pentru rezolvarea problemei.
 
 ```cpp
@@ -43,6 +44,7 @@ void tiparire(){
 ```
 
 A treia functie este cea de backtracking. Aceasta functie executa rezolvarea propriu-zisa a problemei.
+In momentul in care exploram fiecare celula, o marcam in 2 vectori temporari, pentru a tine minte intregul traseu parcurs pana atunci. Daca ajungem la destinatie, stocam solutia in vectorii finali. Altfel, continuam sa parcurgem toate cele 8 celule din jurul celei initiale, cu conditia ca acestea sa nu coboare in altitudine. Cu ajutorul parametrilui suma copiem in vectorul final solutia corecta doar daca este cea corecta (suma diferentelor de altitudine intre oricare doua celule parcurse trebuie sa fie maxima).
 ```c++
 void back(int i, int j, int suma, int pas) {
     sol_i[pas] = i; sol_j[pas] = j;
@@ -67,6 +69,9 @@ void back(int i, int j, int suma, int pas) {
     }
 }
 ```
+
+## Main
+
 Ultima parte a programului este functia main. In aceasta parte a programului, apelam functiile de citire, backtracking si afisare.
 ```c++
 int main() {
@@ -76,7 +81,9 @@ int main() {
 return 0;
 }
 ```
-In final, tot programul arata in felul urmator:
+
+## Program complet
+
 ```c++
 #include <iostream>
 using namespace std;
