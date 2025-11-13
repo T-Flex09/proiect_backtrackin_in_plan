@@ -43,7 +43,7 @@ void back(int i, int j, int suma, int pas) {
         for(int k = 0; k < 8; k++) {
             int vi = i + di[k];
             int vj = j + dj[k];
-            if(0<=vi && vi<=n && 0<=vj && vj<=m) {
+            if(1<=vi && vi<=n && 1<=vj && vj<=m) {
                 if(a[vi][vj] >= a[i][j])
                     back(vi, vj, suma + a[vi][vj] - a[i][j], pas + 1);
             }
